@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container" class="app-color">
+        <div id="calculator" class="app-color app-shadow">
+            <div id="input-container" class="input-container-dark">
+                <input type="text" name="numbers" id="input" class="input-dark" readonly>
+            </div>
+            <div id="btns-container">
+                <div class="left-btns-container">
+                    <div class="left-btns-container-inside">
+                        <input class="btns clear-btn app-shadow" type="button" value="Clear" onclick="clearInput()">
+                        <input class="btns app-color app-shadow" type="button" value="/" onclick="solve('/')">
+                    </div>
+                    <div class="left-btns-container-inside">
+                        <input class="btns app-color app-shadow" type="button" value="7" onclick="solve('7')">
+                        <input class="btns app-color app-shadow" type="button" value="8" onclick="solve('8')">
+                        <input class="btns app-color app-shadow" type="button" value="9" onclick="solve('9')">
+                    </div>
+                    <div class="left-btns-container-inside">
+                        <input class="btns app-color app-shadow" type="button" value="4" onclick="solve('4')">
+                        <input class="btns app-color app-shadow" type="button" value="5" onclick="solve('5')">
+                        <input class="btns app-color app-shadow" type="button" value="6" onclick="solve('6')">
+                    </div>
+                    <div class="left-btns-container-inside">
+                        <input class="btns app-color app-shadow" type="button" value="1" onclick="solve('1')">
+                        <input class="btns app-color app-shadow" type="button" value="2" onclick="solve('2')">
+                        <input class="btns app-color app-shadow" type="button" value="3" onclick="solve('3')">
+                    </div>
+                    <div class="left-btns-container-inside">
+                        <input class="btns app-color app-shadow" type="button" value="0" onclick="solve('0')">
+                        <input class="btns app-color app-shadow" type="button" value="00" onclick="solve('00')">
+                        <input class="btns app-color app-shadow" type="button" value="." onclick="solve('.')">
+                    </div>
+                </div>
+                <div class="right-btns-container">
+                    <input class="btns app-color app-shadow" type="button" value="x" onclick="solve('*')">
+                    <input class="btns app-color app-shadow" type="button" value="-" onclick="solve('-')">
+                    <input class="btns add-btn app-shadow" type="button" value="+" onclick="solve('+')">
+                    <input class="btns result-btn app-shadow" type="button" value="=" onclick="result()">
+                </div>
+            </div>
+        </div>
+        <div class="theme-changer">
+            <div class="theme app-shadow" class="app-shadow" onclick="changeTheme()"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
